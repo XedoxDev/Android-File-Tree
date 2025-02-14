@@ -1,0 +1,35 @@
+// For test library
+
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'org.xedox.treeview'
+    compileSdk 33
+    
+    defaultConfig {
+        applicationId "org.xedox.treeview"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release.minifyEnabled true
+        debug.minifyEnabled false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.9.0")
+    
+    implementation(project(":lib"))
+}

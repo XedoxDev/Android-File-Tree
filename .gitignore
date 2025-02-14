@@ -1,0 +1,7 @@
+/build
+/.androidide
+/.idea
+/.gradle
+
+/app/build
+/lib/build

@@ -1,0 +1,11 @@
+org.xedox.treeview
+drawable arrow_up
+drawable file
+drawable folder
+drawable ripple
+id icon
+id isOpen
+id name
+id parent
+layout file_item
+string FileTreeLibraryName
